@@ -11,9 +11,8 @@ public class mainStart extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_start);
-
         Intent intent = new Intent(this, ViewPagerActivity.class);
         startActivity(intent);
+        finish();
     }
 }
